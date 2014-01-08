@@ -52,6 +52,23 @@ Try the REST API:
 
 * open the browser and access the url `http://localhost:3000/api/test/example?limit=1&fields=username`
 
+### Do you want to use even AngularJS?
+
+Just use [generator-angular](https://github.com/yeoman/generator-angular). Example:
+
+Install generator-angular
+```
+$ npm install -g generator-angular
+```
+cd in the right folder
+```
+$ cd public && mkdir angular-app && cd $_
+```
+Run generator-angular
+```
+$ yo angular MyAngularAppName
+```
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
