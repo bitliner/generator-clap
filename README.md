@@ -2,7 +2,8 @@ generator-clap
 ==============
 
 A generator for [Yeoman](http://yeoman.io).
-Clap lets you generate an Express app, with ready to use REST-API to access data stored in a MongoDb database instance
+Clap lets you generate an Express app, with ready to use REST-API to access data stored in a MongoDb database instance.
+It includes also grunt and grunt-forever.
 
 
 To build the REST API layer, it uses the module [restful-mongo](https://github.com/bitliner/restful-mongo).
@@ -41,7 +42,7 @@ $ yo clap MyAppName
 
 Run the generated app:
 ```
-$ node app.js
+$ grunt run
 ```
 
 Try the REST API:
