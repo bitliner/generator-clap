@@ -1,0 +1,20 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "no license",
+  "dependencies": {
+    <% if (hasEjs) { %>
+    "ejs": "~0.8.4",
+    <% } else { %>
+    "jade":"*",
+    <% } %>
+  	"express": "3.4.5",
+    "winston": "~0.7.2",
+    "restful-mongo": "~0.3.5"
+  }
+}
