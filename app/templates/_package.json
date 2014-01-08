@@ -15,6 +15,8 @@
     <% } %>
   	"express": "3.4.5",
     "winston": "~0.7.2",
-    "restful-mongo": "~0.3.5"
+    "restful-mongo": "~0.3.5",
+    "grunt": "~0.4.2",
+    "grunt-forever": "~0.4.1"
   }
 }

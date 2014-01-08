@@ -2,7 +2,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
-
+console.log(process.argv);
 
 var ClapGenerator = module.exports = function ClapGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
@@ -28,7 +28,7 @@ ClapGenerator.prototype.askFor = function askFor() {
     type: 'input',
     name: 'appName',
     message: 'What is the name of this app?',
-    default: 'ExpressApp'
+    default: (process.argv.length>=4 && process.argv[3]) || 'ExpressApp'
   },{
     type: 'confirm',
     name: 'hasEjs',
@@ -65,11 +65,14 @@ ClapGenerator.prototype.app = function app() {
   this.mkdir('routes');
   this.mkdir('public');
   this.mkdir('views');
+  this.mkdir('log');
+
 
   //this.mkdir('app/templates');
 
   this.copy('views/_index.ejs', 'views/index.ejs');
   this.copy('routes/_index.js', 'routes/index.js');
+  this.copy('_gruntfile.js', 'gruntfile.js');
 
   this.template('_package.json', 'package.json');
   this.template('_app.js','app.js')
