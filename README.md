@@ -1,12 +1,9 @@
 generator-clap
 ==============
 
-Clap lets you generate an Express app, with ready to use REST-API to access data stored in MongoDb
-
-# generator-clap[![Build Status](https://secure.travis-ci.org/bitliner/generator-clap.png?branch=master)](https://travis-ci.org/bitliner/generator-clap)
-
 A generator for [Yeoman](http://yeoman.io).
-It lets you generate a basic Express web app, with a ready to use API to access data stored in a Mongo database instance.
+Clap lets you generate an Express app, with ready to use REST-API to access data stored in a MongoDb database instance
+
 
 To build the REST API layer, it uses the module [restful-mongo](https://github.com/bitliner/restful-mongo).
 
