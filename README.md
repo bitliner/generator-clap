@@ -1,3 +1,8 @@
+generator-clap
+==============
+
+Clap lets you generate an Express app, with ready to use REST-API to access data stored in MongoDb
+
 # generator-clap[![Build Status](https://secure.travis-ci.org/bitliner/generator-clap.png?branch=master)](https://travis-ci.org/bitliner/generator-clap)
 
 A generator for [Yeoman](http://yeoman.io).
